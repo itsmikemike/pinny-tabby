@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pinny Tabby — Settings</title>
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+<!--APP-START-->
+<main class="page">
+  <header>
+    <h1>Pinny Tabby</h1>
+    <p class="sub">Pinned tabs that open every time Chrome starts. Make a profile for each part of your day and switch between them in one click.</p>
+  </header>
+
+  <nav class="tabs" id="profileTabs" aria-label="Profiles"></nav>
+  <p class="tabs-hint" id="tabsHint">Pick a profile above to edit it. Switch from the toolbar icon<span id="hintMenu">, its right-click menu</span><span id="hintKeys"> or <kbd class="keys">Alt+Shift+P</kbd></span>.</p>
+
+  <section class="card" aria-labelledby="editingLabel">
+    <p class="label editing" id="editingLabel">Editing profile</p>
+    <div class="profile-head">
+      <span class="badge big" id="profBadge">W</span>
+      <div class="name-wrap">
+        <input class="name" id="profName" aria-label="Profile name" maxlength="24" spellcheck="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20h9"/><path d="M16.4 3.6a2.1 2.1 0 1 1 3 3L7 19l-4 1 1-4z"/></svg>
+      </div>
+      <div class="status">
+        <button class="btn primary sm" id="switchBtn">Switch to this profile</button>
+      </div>
+    </div>
+    <div class="color-row">
+      <span class="label" id="colorLabel">Color</span>
+      <div class="swatches" id="swatches" role="radiogroup" aria-labelledby="colorLabel"></div>
+    </div>
+
+    <h2>Sites to pin <span class="count" id="count">0</span></h2>
+    <div class="empty" id="empty" hidden>
+      <p id="emptyText">No sites in this profile yet.</p>
+      <button class="btn primary sm" id="importEmpty">Use my current pinned tabs</button>
+    </div>
+    <ul class="sites" id="sites"></ul>
+    <form class="add" id="addForm" autocomplete="off">
+      <input id="addInput" type="text" inputmode="url" placeholder="Add a site, like mail.google.com" aria-label="Add a site">
+      <button type="submit" aria-label="Add site"><svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></button>
+    </form>
+    <p class="hint" id="addHint">Press Enter to add. Drag the handle, or use the arrows, to change the order.</p>
+
+    <div class="buttons card-foot">
+      <button class="btn secondary" id="import">Use my current pinned tabs</button>
+      <button class="btn ghost" id="deleteProf">Delete profile</button>
+    </div>
+  </section>
+
+  <section class="card settings" aria-labelledby="settingsTitle">
+    <h2 id="settingsTitle">Settings</h2>
+
+    <div class="setting">
+      <label class="toggle">
+        <input type="checkbox" id="replace">
+        <span class="switch"></span>
+        <span><b>Replace pinned tabs on startup</b>
+          <small>When Chrome starts, close any pinned tabs it restored and open the active profile fresh. Leave off to only add missing ones.</small>
+        </span>
+      </label>
+    </div>
+
+    <div class="setting">
+      <label class="toggle">
+        <input type="checkbox" id="shortcutOn">
+        <span class="switch"></span>
+        <span><b>Keyboard shortcut</b>
+          <small id="shortcutDesc">Press <kbd id="shortcutKeys">Alt+Shift+P</kbd> to jump to the next profile.</small>
+        </span>
+      </label>
+      <div class="setting-extra">
+        <button class="btn outline sm" id="shortcutPage">Change or clear the key in Chrome</button>
+        <span class="hint" id="shortcutNote">Turning this off makes the shortcut do nothing. To free up the key for other apps, clear it in Chrome's shortcut settings.</span>
+      </div>
+    </div>
+
+    <div class="setting">
+      <label class="toggle">
+        <input type="checkbox" id="stripOn">
+        <span class="switch"></span>
+        <span><b>Strip addresses to the base URL</b>
+          <small>Save sites as just their main address, so <code>mail.google.com/mail/u/0/#inbox</code> becomes <code>mail.google.com</code>. Applies to sites you add, edit or import from now on.</small>
+        </span>
+      </label>
+      <div class="setting-extra">
+        <button class="btn outline sm" id="stripNow">Strip existing sites</button>
+        <span class="hint" id="stripNote"></span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <a href="privacy.html" target="_blank" rel="noopener">Privacy policy</a>
+    <span id="version"></span>
+  </footer>
+
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+
+  <div class="dialog" id="confirm" hidden>
+    <div class="dialog-box" role="alertdialog" aria-modal="true" aria-labelledby="confirmTitle" aria-describedby="confirmText">
+      <h3 id="confirmTitle"></h3>
+      <p id="confirmText"></p>
+      <div class="buttons">
+        <button class="btn primary" id="confirmYes">OK</button>
+        <button class="btn outline" id="confirmNo">Cancel</button>
+      </div>
+    </div>
+  </div>
+</main>
+<!--APP-END-->
+<script src="shared.js"></script>
+<script src="options.js"></script>
+</body>
+</html>

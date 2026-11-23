@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Pinny Tabby</title>
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body class="popup-body">
+<!--POPUP-START-->
+<div class="popup">
+  <div class="pop-head">
+    <h1>Pinny Tabby</h1>
+    <span class="pop-sub">Switch profile</span>
+  </div>
+  <div class="pop-list" id="ppList" role="radiogroup" aria-label="Profiles"></div>
+
+  <div class="pop-confirm" id="ppConfirm" hidden>
+    <p id="ppConfirmText"></p>
+    <div class="buttons">
+      <button class="btn primary sm" id="ppConfirmYes">Switch</button>
+      <button class="btn outline sm" id="ppConfirmNo">Cancel</button>
+    </div>
+  </div>
+
+  <div class="pop-undo" id="ppUndo" hidden>
+    <span id="ppUndoText"></span>
+    <button id="ppUndoBtn">Undo</button>
+  </div>
+
+  <div class="pop-foot">
+    <button class="btn outline sm" id="ppOpen" title="Open any of this profile's sites that aren't pinned right now">Restore tabs</button>
+    <button class="icon-btn" id="ppSettings" aria-label="Settings" title="Settings"><svg viewBox="0 0 24 24"><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></button>
+  </div>
+  <p class="pop-msg" id="ppMsg" role="status"></p>
+</div>
+<!--POPUP-END-->
+<script src="shared.js"></script>
+<script src="popup.js"></script>
+</body>
+</html>

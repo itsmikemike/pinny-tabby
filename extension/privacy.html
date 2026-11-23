@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pinny Tabby privacy policy</title>
+<link rel="stylesheet" href="fonts.css">
+<style>
+:root{color-scheme:light dark;--page:light-dark(#F2F7F6,#0E1A19);--card:light-dark(#FFFFFF,#162523);--ink:light-dark(#14302E,#E2EEEB);--muted:light-dark(#56706B,#9BB2AD);--line:light-dark(#DCE7E4,#2A3E3B);--primary:light-dark(#0B7F70,#3FCFB4);--soft:light-dark(#D6F2EC,#11403A);--soft-ink:light-dark(#0B5E53,#7EE6D2)}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--page);color:var(--ink);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+.doc{max-width:720px;margin:0 auto;padding:clamp(28px,6vw,64px) 22px 72px}
+header{margin-bottom:28px}
+.mark{width:52px;height:52px;border-radius:16px;corner-shape:squircle;background:var(--primary);display:grid;place-items:center;margin-bottom:18px}
+.mark svg{width:30px;height:30px;fill:none;stroke:var(--card);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;transform:rotate(30deg)}
+h1{font:600 clamp(32px,6vw,44px)/1.05 Fraunces,Georgia,serif;letter-spacing:-0.02em;margin:0;text-wrap:balance}
+h2{font:600 22px/1.2 Fraunces,Georgia,serif;letter-spacing:-0.02em;margin:36px 0 10px}
+.meta{color:var(--muted);margin:8px 0 0;font-size:14px}
+.summary{background:var(--soft);color:var(--soft-ink);border-radius:16px;padding:6px 22px 10px}
+.summary h2{margin-top:16px}
+.summary b{color:inherit}
+ul{padding-left:20px}li{margin:6px 0}
+b{font-weight:600}
+a{color:var(--primary);text-underline-offset:2px}
+code{font:500 14px/1.4 ui-monospace,Menlo,Consolas,monospace;background:var(--card);border:1px solid var(--line);padding:1px 5px;border-radius:6px;overflow-wrap:anywhere}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:12px;overflow:hidden;font-size:15px}
+th,td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:13px;font-weight:500;color:var(--muted)}
+td:first-child{font-weight:600;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+@media(max-width:560px){thead{display:none}tr{display:grid;padding:8px 0;border-bottom:1px solid var(--line)}td{border:0;padding:4px 14px}}
+</style>
+</head>
+<body>
+<main class="doc">
+  <header>
+    <span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 17v5"/><path d="M9 10.76a2 2 0 0 1-1.11 1.79l-1.78.9A2 2 0 0 0 5 15.24V16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-.76a2 2 0 0 0-1.11-1.79l-1.78-.9A2 2 0 0 1 15 10.76V7a1 1 0 0 1 1-1 2 2 0 0 0 0-4H8a2 2 0 0 0 0 4 1 1 0 0 1 1 1z"/></svg></span>
+    <h1>Pinny Tabby privacy policy</h1>
+    <p class="meta">Effective November 23, 2026</p>
+  </header>
+
+  <section class="summary">
+    <h2>The short version</h2>
+    <ul>
+      <li>Pinny Tabby keeps your profiles and the web addresses you choose to pin <b>in your own Chrome browser</b>.</li>
+      <li>It has <b>no servers, no accounts, no analytics and no ads</b>. Nothing is sent to the developer or anyone else.</li>
+      <li>It <b>never reads the content</b> of the pages you visit.</li>
+    </ul>
+  </section>
+
+  <h2>What Pinny Tabby handles</h2>
+  <p>Pinny Tabby opens a set of websites as pinned tabs when Chrome starts and lets you switch between sets, called profiles. To do that, it handles:</p>
+  <ul>
+    <li><b>The web addresses you save.</b> The sites you add to a profile, for example <code>mail.google.com</code>.</li>
+    <li><b>The addresses of your pinned tabs.</b> Pinny Tabby looks at which tabs are pinned in your current window so it doesn't open duplicates, so switching profiles can close the old profile's pinned tabs, and so "Use my current pinned tabs" can save them to a profile. It doesn't look at your other tabs or your browsing history.</li>
+    <li><b>Your profile settings.</b> Each profile's name and color, which profile is active, and your choices in Settings.</li>
+    <li><b>A short-lived undo record.</b> When you switch profiles, Pinny Tabby remembers the addresses of the pinned tabs it closed, for five minutes, so you can undo the switch. This is kept in Chrome's session storage and is erased when you close Chrome.</li>
+    <li><b>Site icons.</b> Icons for your saved sites come from Chrome's own local icon cache. Pinny Tabby doesn't download them from the web.</li>
+  </ul>
+
+  <h2>Where it's stored</h2>
+  <p>Your profiles and settings are saved with Chrome's built-in extension storage (<code>chrome.storage.sync</code>). If you're signed in to Chrome with sync turned on, Chrome syncs them to your other computers through your Google Account, the same way it syncs your bookmarks. That syncing is done by Google and covered by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>. The developer of Pinny Tabby can't see this data. If sync is off, it stays on your computer.</p>
+
+  <h2>What Pinny Tabby doesn't do</h2>
+  <ul>
+    <li>It doesn't collect, transmit, sell or share any of your data with the developer or third parties.</li>
+    <li>It doesn't track you, show ads, or use analytics or crash reporting.</li>
+    <li>It doesn't read, change or inject anything into the web pages you visit.</li>
+    <li>It doesn't load any code, fonts or other files from the internet. Everything it uses ships inside the extension.</li>
+  </ul>
+
+  <h2>Permissions it asks for</h2>
+  <table>
+    <thead><tr><th>Permission</th><th>Why</th></tr></thead>
+    <tbody>
+      <tr><td>Tabs</td><td>To open your sites as pinned tabs, close pinned tabs when you switch profiles, and see which pinned tabs are already open. Chrome describes this as "Read your browsing history"; Pinny Tabby only uses it for your pinned tabs, as described above.</td></tr>
+      <tr><td>Storage</td><td>To save your profiles and settings in Chrome.</td></tr>
+      <tr><td>Context menus</td><td>To show your profiles when you right-click the Pinny Tabby icon.</td></tr>
+      <tr><td>Favicon</td><td>To show each saved site's icon from Chrome's local cache.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>Change or delete any site or profile at any time on the Pinny Tabby settings page.</li>
+    <li>Removing Pinny Tabby from Chrome deletes its saved profiles and settings.</li>
+    <li>To stop syncing between computers, turn off extension sync in Chrome's settings.</li>
+  </ul>
+
+  <h2>Chrome Web Store User Data Policy</h2>
+  <p>Pinny Tabby's use of information complies with the <a href="https://developer.chrome.com/docs/webstore/program-policies/">Chrome Web Store User Data Policy</a>, including the Limited Use requirements. Data is used only to provide Pinny Tabby's features described above.</p>
+
+  <h2>Children</h2>
+  <p>Pinny Tabby isn't directed at children and doesn't collect personal information from anyone.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the new version will be posted here with a new effective date. If a change ever involved collecting data, Pinny Tabby would ask for your permission first.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy? Use the Support tab on Pinny Tabby's Chrome Web Store page.</p>
+</main>
+</body>
+</html>

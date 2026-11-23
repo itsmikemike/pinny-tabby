@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Pinny Tabby",
+  "version": "1.5.2",
+  "description": "Open your favorite sites as pinned tabs every time Chrome starts, with profiles for work, home and everything in between.",
+  "permissions": ["tabs", "storage", "contextMenus", "favicon"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "icons/16.png",
+    "32": "icons/32.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "action": {
+    "default_title": "Pinny Tabby",
+    "default_popup": "popup.html",
+    "default_icon": { "16": "icons/16.png", "32": "icons/32.png" }
+  },
+  "commands": {
+    "next-profile": {
+      "suggested_key": { "default": "Alt+Shift+P" },
+      "description": "Switch to the next profile"
+    }
+  }
+}
