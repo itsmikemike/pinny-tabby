@@ -21,7 +21,7 @@ Your list syncs to any Chrome where you're signed in and have the extension inst
 
 ## Profiles
 
-Make a profile for each part of your day (Work, Home, Projects…), each with its own pinned sites and color. Up to 6.
+Make a profile for each part of your day (Work, Home, Projects…), each with its own pinned sites and color. Up to 5.
 
 - **Click** the toolbar icon to pick a profile. Switching closes the old profile's pinned tabs and opens the new ones.
 - **Right-click** the icon for a quick profile menu.
@@ -35,7 +35,7 @@ Tip: pin the extension (puzzle-piece menu → pin) so the icon is always visible
 
 ## Icons
 
-`icons/` holds the app icon (a white pushpin on a seafoam squircle) at 16, 32, 48 and 128 px. The pushpin is from Lucide (ISC license). The 128 px one is what the Chrome Web Store shows.
+`icons/` holds the app icon (a white pushpin on a seafoam squircle, with a white "P" tag at the lower right) at 16, 32, 48 and 128 px. The pushpin is from Lucide (ISC license). The 128 px one is what the Chrome Web Store shows.
 
 ## Base URLs
 

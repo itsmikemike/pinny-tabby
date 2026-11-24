@@ -157,7 +157,7 @@ function drawIcon(color, letter, size) {
     g.restore();
   } catch { /* Path2D unavailable: the tag still identifies the profile */ }
   // The letter tag at the lower right.
-  const r = size * 0.25, cx = size - r, cy = size - r;
+  const r = size * 0.24, cx = size - r - size * 0.04, cy = cx; // inside the rounded corner
   g.fillStyle = "#FFFFFF";
   g.beginPath();
   g.arc(cx, cy, r, 0, Math.PI * 2);

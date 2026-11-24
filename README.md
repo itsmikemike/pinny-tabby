@@ -7,7 +7,7 @@ A Chrome extension that opens your favorite sites as pinned tabs every time Chro
 ## Features
 
 - **Pinned tabs on startup.** Pick the sites you want and they open as pinned tabs whenever Chrome starts.
-- **Profiles.** Make up to six, like Work, Home or a side project, each with its own sites and color.
+- **Profiles.** Make up to five, like Work, Home or a side project, each with its own sites and color.
 - **One-click switching.** From the toolbar icon, its right-click menu, or Alt+Shift+P. Changed your mind? Undo brings your previous tabs back.
 - **No duplicates.** Sites that are already open aren't opened again.
 - **Use my current pinned tabs.** Save what you have pinned as a profile in one click.

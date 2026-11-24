@@ -2,7 +2,7 @@
 {
   const $ = id => document.getElementById(id);
   const { COLORS, migrateColor, onColor, esc, host, pretty, initial, plural, siteIcon } = PT;
-  const MAX_PROFILES = 6;
+  const MAX_PROFILES = 5; // anyone who already has 6 keeps them; they just can't add more
 
   const tabsEl = $("profileTabs"), sitesEl = $("sites"), countEl = $("count"), emptyEl = $("empty");
   const addForm = $("addForm"), addInput = $("addInput"), addHint = $("addHint");
