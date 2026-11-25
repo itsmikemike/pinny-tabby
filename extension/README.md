@@ -2,13 +2,19 @@
 
 A Chrome extension that opens your chosen set of pinned tabs every time Chrome starts.
 
-## Install (for your own use, no store needed)
+## Install
 
-1. Unzip this folder somewhere permanent (e.g. `Documents/pinned-start`). Chrome loads it from this folder, so don't delete it.
+The easiest way is the [Chrome Web Store](https://chromewebstore.google.com/detail/pinny-tabby/nmgifohnngmmelbmcdfpgojgkifcnbhc). Updates arrive automatically.
+
+To load it from source instead (for developers):
+
+1. Download the repo (**Code → Download ZIP**) and unzip it somewhere permanent. Chrome loads the extension from this folder, so don't delete it.
 2. In Chrome, go to `chrome://extensions`.
 3. Turn on **Developer mode** (top right).
-4. Click **Load unpacked** and pick the `pinned-start` folder.
-5. The settings page opens. Add your sites, one per line, and click **Save**.
+4. Click **Load unpacked** and pick the `extension` folder.
+5. The settings page opens. Add your sites and click **Save**.
+
+If you already installed it from the Web Store, remove one copy first so the two don't conflict.
 
 ## Using it
 

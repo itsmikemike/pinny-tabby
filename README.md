@@ -2,6 +2,8 @@
 
 A Chrome extension that opens your favorite sites as pinned tabs every time Chrome starts, with profiles you can switch between in one click.
 
+**[Add Pinny Tabby to Chrome](https://chromewebstore.google.com/detail/pinny-tabby/nmgifohnngmmelbmcdfpgojgkifcnbhc)**
+
 ![Pinny Tabby settings page](store/screenshot-1-settings.png)
 
 ## Features
@@ -18,9 +20,9 @@ A Chrome extension that opens your favorite sites as pinned tabs every time Chro
 
 ## Install
 
-**Chrome Web Store:** coming soon.
+**Chrome Web Store (recommended):** [Add Pinny Tabby to Chrome](https://chromewebstore.google.com/detail/pinny-tabby/nmgifohnngmmelbmcdfpgojgkifcnbhc). Updates arrive automatically.
 
-**From this repo:**
+**From this repo (for developers):**
 
 1. Download this repo (**Code → Download ZIP**) and unzip it.
 2. Go to `chrome://extensions` and turn on **Developer mode**.
