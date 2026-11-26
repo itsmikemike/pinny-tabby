@@ -2,14 +2,11 @@
 window.PT = (() => {
   // Profile colors (Seafoam palette).
   const COLORS = [
-    { hex: "#0B7F70", name: "Seafoam" }, { hex: "#F08A5D", name: "Coral" }, { hex: "#F2B63D", name: "Sun" },
-    { hex: "#8B7CF6", name: "Lilac" }, { hex: "#3A9BDC", name: "Sky" }, { hex: "#14302E", name: "Ink" }
+    { hex: "#14B8A0", name: "Seafoam" }, { hex: "#FF8A65", name: "Coral" }, { hex: "#FFC93C", name: "Sun" },
+    { hex: "#A08CFF", name: "Lilac" }, { hex: "#4FB8F5", name: "Sky" }, { hex: "#14302E", name: "Ink" }
   ];
-  // Colors from earlier versions, mapped to the Seafoam set.
-  const OLD_COLORS = {
-    "#0d9488": "#0B7F70", "#2e3a5f": "#14302E", "#e5484d": "#F08A5D",
-    "#d97706": "#F2B63D", "#7c3aed": "#8B7CF6", "#2563eb": "#3A9BDC"
-  };
+  // Colors from earlier versions, mapped to the current set.
+  const OLD_COLORS = { "#0d9488": "#14B8A0", "#2e3a5f": "#14302E", "#e5484d": "#FF8A65", "#d97706": "#FFC93C", "#7c3aed": "#A08CFF", "#2563eb": "#4FB8F5", "#0b7f70": "#14B8A0", "#f08a5d": "#FF8A65", "#f2b63d": "#FFC93C", "#8b7cf6": "#A08CFF", "#3a9bdc": "#4FB8F5" };
   // Older colors map to the Seafoam set; anything that isn't a plain hex color
   // (so can't be used to inject styles) falls back to Seafoam.
   const migrateColor = c => {
@@ -32,7 +29,7 @@ window.PT = (() => {
   const plural = (n, word) => `${n} ${word}${n === 1 ? "" : /(s|sh|ch|x)$/.test(word) ? "es" : "s"}`;
 
   // A steady color per site, for the letter shown when there's no favicon.
-  const SITE_TINTS = ["#0B7F70", "#F08A5D", "#F2B63D", "#8B7CF6", "#3A9BDC", "#14302E", "#E06C9F", "#56706B"];
+  const SITE_TINTS = ["#14B8A0", "#FF8A65", "#FFC93C", "#A08CFF", "#4FB8F5", "#14302E", "#E06C9F", "#56706B"];
   const siteColor = u => SITE_TINTS[[...host(u)].reduce((a, c) => a + c.charCodeAt(0), 0) % SITE_TINTS.length];
 
   // Chrome's favicon cache (needs the "favicon" permission). Returns null outside the extension.
