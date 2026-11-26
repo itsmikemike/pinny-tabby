@@ -55,6 +55,19 @@ All fonts are bundled in `fonts/`, so the extension never loads anything from th
 
 The look is the Seafoam palette. Its tokens and components are documented in the Pinny Tabby design system; `options.css` uses the same token names.
 
+Each profile gets one of six colors:
+
+| Name | Hex |
+| --- | --- |
+| Seafoam | `#14B8A0` |
+| Coral | `#FF8A65` |
+| Sun | `#FFC93C` |
+| Lilac | `#A08CFF` |
+| Sky | `#4FB8F5` |
+| Ink | `#14302E` |
+
+Profiles saved with the earlier, deeper colors are switched to these automatically. The store images use a pale sea-glass background to match.
+
 ## Licenses
 
 Third-party notices (Lucide icons, Fraunces and Inter fonts) are in `LICENSES.txt`.
